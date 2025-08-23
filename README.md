@@ -1,4 +1,4 @@
-# SIEM Honeypot Lab featuring Microsoft Sentinel to analyse real-world attack data
+# Azure Honeypot Lab featuring Microsoft Sentinel as the SIEM
 
 
 ## Lab overview
