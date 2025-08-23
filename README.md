@@ -412,4 +412,4 @@ else {
 
 ---
 
-### Browse az-honeypot-lab [GitHub Repo](https://github.com/anjulameegalla/az-honeypot-lab/) here.
+- ### Browse az-honeypot-lab [GitHub Repo](https://github.com/anjulameegalla/az-honeypot-lab/) here.
