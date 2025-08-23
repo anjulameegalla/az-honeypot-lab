@@ -9,7 +9,7 @@
 
 ## Azure resources
 
-**Windows VM**
+### Windows VM
 
 - Name - HoneyVM
 - Resource group (RG) - honeypot-lab
@@ -17,19 +17,19 @@
 - Size - standard_B2s
 - VNets - default
 
-**NSG > Advanced > Configure NSG >**
+### NSG > Advanced > Configure NSG >
 
 - NSG name - HoneyVM-nsg
 - Source port ranges - * (allow all)
 - Destination port ranges - * (allow all)
 - Priority - 100
 
-**Log Analytics workspace**
+### Log Analytics workspace
 
 - Name - law-honeypot
 - RG - honeypot-lab
 
-**MS Defender for Cloud > Management > Environment settings >** 
+### MS Defender for Cloud > Management > Environment settings >
 
 - Find Azure subscription 1 > law-honeypot
 
@@ -41,27 +41,23 @@ Settings > Data collection >
 
 - Turn on All events
 
-**Log Analytics workspace > law-honeypot > Classic > Virtual Machines (deprecated) >**
+### Log Analytics workspace > law-honeypot > Classic > Virtual Machines (deprecated) >
 
 - Select HoneyVM, then CONNECT
 
-**MS Sentinel**
+### MS Sentinel
 
 - Add law-honeypot to MS Sentinel
 
----
-
-Connect to HoneyVM via RDP
+### Connect to HoneyVM via RDP
 
 - Turn Windows firewall OFF
-
-![rdp.png](res/rdp.png)
 
 ---
 
 ## GeoLocation API
 
-Get API key from IP Geolocation.io:  [https://ipgeolocation.io/ip-location-api.html](https://ipgeolocation.io/ip-location-api.html)
+- Get API key from IP Geolocation.io:  [https://ipgeolocation.io/ip-location-api.html](https://ipgeolocation.io/ip-location-api.html)
 
 ![geolocationapi.png](res/geolocationapi.png)
 
@@ -213,13 +209,13 @@ Collect failed_rdp file
 
 - Browse C:/ > Program Data > failed_rdp.log
 
-**law-honeypot > Tables > Create new custom log (MMA-based) >**
+### law-honeypot > Tables > Create new custom log (MMA-based) >
 
 - Sample log - Select failed_rdp.log
 - Collection paths - Windows | C:\ProgramData\failed_rdp.log
 - Custom log name - FAILED_RDP_GEO_CL
 
-**law-honeypot > Logs >**
+### law-honeypot > Logs >
 
 ## Custom Log creation Query (KQL)
 
@@ -245,7 +241,7 @@ FAILED_RDP_GEO_CL
 
 ---
 
-**MS Sentinel >  Threat Management > Workbooks > New workbook > Add query >**
+### MS Sentinel >  Threat Management > Workbooks > New workbook > Add query >
 
 - Log Analytics workspace - law-honeypot
 - Visualization - Map
