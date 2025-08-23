@@ -410,4 +410,6 @@ else {
 
 - Contains code to handle the case when an entry with the current timestamp already exists in the log file. In this provided code, it's left empty and does nothing.
 
-<br>
+---
+
+### Browse az-honeypot-lab [GitHub Repo](https://github.com/anjulameegalla/az-honeypot-lab/) here.
