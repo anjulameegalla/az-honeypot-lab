@@ -212,7 +212,7 @@ Collect failed_rdp file
 ### law-honeypot > Tables > Create new custom log (MMA-based) >
 
 - Sample log - Select failed_rdp.log
-- Collection paths - | Windows | C:\ProgramData\failed_rdp.log
+- Collection paths - Windows / C:\ProgramData\failed_rdp.log
 - Custom log name - FAILED_RDP_GEO_CL
 
 ### law-honeypot > Logs >
