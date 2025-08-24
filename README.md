@@ -22,19 +22,17 @@ The collected information is stored in a custom log file (failed_rdp.log), which
 
 - **A GeoLocation API**
 - **Azure resources [VM, NSG, Log Analytics workspace]**
-- **Azure Sentinel**
-
----
+- **Microsoft Sentinel**
 
 ## GeoLocation API
 
-- Get API key from ip2location.io [API Key](https://ipgeolocation.io/ip-location-api.html) | [Documentation](https://ipgeolocation.io/documentation/ip-geolocation-api.html)
+- Get API key from IP2Location.io  [**API Key**](https://ipgeolocation.io/ip-location-api.html) | [**Documentation**](https://ipgeolocation.io/documentation/ip-geolocation-api.html)
 
 
 ## Windows - PowerShell ISE script
 
 <details>
-    <summary>**Click to expand**</summary>
+    <summary><b>Click to expand</b></summary>
 
 ```
 # Get API key from here: https://ip2location.io/
@@ -203,7 +201,7 @@ FAILED_RDP_GEO_CL
 
 ---
 
-## Custom Map creation Query
+## Custom Map creation Query - MS Sentinel
 ```sql
 FAILED_RDP_GEO_CL 
 | extend username = extract(@"username:([^,]+)", 1, RawData),
