@@ -57,15 +57,14 @@ Settings > Data collection >
 
 ## GeoLocation API
 
-#### Get API key from [ipgeolocation.io](https://ipgeolocation.io/ip-location-api.html) / [Documentation](https://ipgeolocation.io/documentation/ip-geolocation-api.html)
-#### or
-#### Get API key from [ip2location.io](https://www.ip2location.io/) / [Documentation](https://www.ip2location.io/ip2location-documentation)
+- Get API key from [ipgeolocation.io](https://ipgeolocation.io/ip-location-api.html) / [Docs](https://ipgeolocation.io/documentation/ip-geolocation-api.html) or;
+- Get API key from [ip2location.io](https://www.ip2location.io/) / [Docs](https://www.ip2location.io/ip2location-documentation)
 
 
 ## Windows - PowerShell ISE script
 
-#### Powershell script for ![ipgeolocation.io](scripts/ipgeolocation_api.ps1) API
-#### Powershell script for ![ip2location.io](scripts/ip2location_api.ps1) API
+- Powershell script for [ipgeolocation.io](scripts/ipgeolocation_api.ps1) API
+- Powershell script for [ip2location.io](scripts/ip2location_api.ps1) API
 
 ---
 
@@ -136,9 +135,6 @@ FAILED_RDP_GEO_CL
 ---
 
 
-### Find in-Depth PowerShell Code Explanation on [CyberfolioChronicles](https://github.com/CyberfolioChronicles/Azure_Sentinel_Lab).
+#### Find in-Depth PowerShell Code Explanation on [CyberfolioChronicles](https://github.com/CyberfolioChronicles/Azure_Sentinel_Lab).
 
-
----
-
-- ### Browse az-honeypot-lab [GitHub Repo](https://github.com/anjulameegalla/az-honeypot-lab/) here.
+### Browse az-honeypot-lab [GitHub Repo](https://github.com/anjulameegalla/az-honeypot-lab/) here.
