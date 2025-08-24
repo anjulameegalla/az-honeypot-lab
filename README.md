@@ -1,4 +1,4 @@
-# Azure Honeypot Lab featuring Microsoft Sentinel as the SIEM
+# Azure Honeypot Lab featuring Microsoft Sentinel 
 
 
 ## Lab overview
@@ -57,14 +57,15 @@ Settings > Data collection >
 
 ## GeoLocation API
 
-- ### Get API key from [ipgeolocation.io](https://ipgeolocation.io/ip-location-api.html) / [Docs](https://ipgeolocation.io/documentation/ip-geolocation-api.html) Free 1000 API Queries
-- ### Get API key from [ip2location.io](https://www.ip2location.io/) / [Docs](https://www.ip2location.io/ip2location-documentation) Free 50000 API Queries
+- Get API key from [ipgeolocation.io](https://ipgeolocation.io/ip-location-api.html) / [Docs](https://ipgeolocation.io/documentation/ip-geolocation-api.html)
+
+- Get API key from [ip2location.io](https://www.ip2location.io/) / [Docs](https://www.ip2location.io/ip2location-documentation)
 
 
 ## Windows - PowerShell ISE script
 
-- ### Powershell script for [ipgeolocation.io](scripts/ipgeolocation_api.ps1) API
-- ### Powershell script for [ip2location.io](scripts/ip2location_api.ps1) API
+- Powershell script for [ipgeolocation.io](scripts/ipgeolocation_api.ps1) API
+- Powershell script for [ip2location.io](scripts/ip2location_api.ps1) API
 
 ---
 
