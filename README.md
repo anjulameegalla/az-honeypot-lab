@@ -24,6 +24,8 @@ The collected information is stored in a custom log file (failed_rdp.log), which
 - **Azure resources [VM, NSG, Log Analytics workspace]**
 - **Microsoft Sentinel**
 
+<br>
+
 ## GeoLocation API
 
 - Get API key from IP2Location.io  [**API Key**](https://ipgeolocation.io/ip-location-api.html) | [**Documentation**](https://ipgeolocation.io/documentation/ip-geolocation-api.html)
@@ -371,7 +373,3 @@ else {
 <br>
 
 </details>
-
----
-
-### Browse az-honeypot-lab [GitHub Repo](https://github.com/anjulameegalla/az-honeypot-lab/) here.
