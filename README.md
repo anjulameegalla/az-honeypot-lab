@@ -181,6 +181,10 @@ while ($true)
    
 </details>
 
+### Script generating Failed RDP login logs
+
+![pwshLogs.png](res/pwshLogs.png)
+
 ---
 
 ## Custom Log creation Query
@@ -203,7 +207,7 @@ FAILED_RDP_GEO_CL
 
 ### Query output :
 
-![log-query.png](res/log-query.png)
+![log-query.png](res/logQuery.png.png)
 
 ---
 
@@ -224,13 +228,34 @@ FAILED_RDP_GEO_CL
 | summarize event_count=count() by latitude, longitude, sourcehost, label, destination, country
 ```
 
-## Map of incoming attacks after few minutes (Test attempt)**
+## Map of incoming attacks after few minutes (Test attempt)
 
-![sentinel-map1](res/sentinel-map1.png)
+![sentinel-map1](res/sentinelMap1.png)
 
-## Map of incoming attacks after 14 hours (built custom logs including geodata)**
 
-![sentinel-map2](res/sentinel-map2.png)
+## Map of incoming attacks after 24 hours (built custom logs including geodata)
+
+![sentinel-map2](res/sentinelMap2.png)
+
+
+### Incoming attacks Analysis
+
+| Location | No. of attempts | Commom IPs |
+| -------- | -------- |------- |
+| Poland  | 16.4K  | 149.50.96.98 |
+| Mozambique  | 5.88K  | 160.242.36.216 |
+| China  | 4.17K  | 125.75.66.99 |
+| Netherlands | 3.85K | 92.63.197.23 , 185.170.144.3 , 84.84.121.37 |
+| UK | 1.61K | 80.94.95.215 |
+| Korea | 1016 | 115.92.155.19 , 122.202.246.213 |
+| India | 709 | 203.192.237.115 , 103.119.179.133 , 125.18.138.42 |
+| Serbia | 358 | 109.92.111.135 |
+| Nepal | 340 | 110.44.116.60 |
+| Sudan | 220 | 41.209.126.101 |
+| USA | 140 | 185.243.96.107 , 67.205.146.203 |
+| Russia | 64 | 185.39.19.42 |
+| Luxembourg | 30 | 158.64.24.12 |
+
 
 ---
 
