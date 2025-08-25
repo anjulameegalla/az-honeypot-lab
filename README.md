@@ -28,12 +28,12 @@ The collected information is stored in a custom log file (failed_rdp.log), which
 - **Azure resources [VM, NSG, Log Analytics workspace]**
 - **Microsoft Sentinel**
 
-<br>
 
 ## GeoLocation API
 
 - Get API key from IP2Location.io  [**API Key**](https://ipgeolocation.io/ip-location-api.html) | [**Documentation**](https://ipgeolocation.io/documentation/ip-geolocation-api.html)
 
+<br>
 
 ## Windows - PowerShell ISE script
 
@@ -207,7 +207,7 @@ FAILED_RDP_GEO_CL
 
 ### Query output :
 
-![log-query.png](res/logQuery.png.png)
+![log-query.png](res/logQuery.png)
 
 ---
 
@@ -254,6 +254,7 @@ FAILED_RDP_GEO_CL
 | Sudan | 220 | 41.209.126.101 |
 | USA | 140 | 185.243.96.107 , 67.205.146.203 |
 | Russia | 64 | 185.39.19.42 |
+| Ukraine | 47 | 185.243.96.107 |
 | Luxembourg | 30 | 158.64.24.12 |
 
 
