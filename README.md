@@ -1,9 +1,8 @@
 # Azure Honeypot Lab featuring Microsoft Sentinel 
 
+## Demo
 
-## Lab overview
-
-![overview.png](/res/overview.png)
+### [Watch Demo on YouTube](https://youtu.be/kcX535HwmYc)
 
 ---
 
@@ -12,6 +11,11 @@
 This GitHub repo details a project for setting up an Azure Honeypot Lab with Microsoft Sentinel to detect and analyze failed RDP login attempts on a Windows host. The lab uses a Windows 10 VM as the honeypot, a Log Analytics workspace for data collection, and Microsoft Sentinel as the SIEM. A PowerShell script monitors for failed logins, extracts the attacker's IP address, username, and timestamp from Windows Event Viewer, and then enriches this data with geolocation information using an API.
 
 The collected information is stored in a custom log file (failed_rdp.log), which is ingested into the Log Analytics workspace. From there, a Kusto Query Language (KQL) query is used to parse the data. The final output is a map visualization within a Microsoft Sentinel workbook, which graphically displays the geographical source of the attacks, allowing for the analysis of attack patterns and the identification of malicious sources.
+
+
+## Lab overview
+
+![overview.png](/res/overview.png)
 
 
 ## Languages Used
@@ -220,18 +224,18 @@ FAILED_RDP_GEO_CL
 | summarize event_count=count() by latitude, longitude, sourcehost, label, destination, country
 ```
 
-## **Attempt 1 - Map of incoming attacks after few minutes**
+## Map of incoming attacks after few minutes (Test attempt)**
 
 ![sentinel-map1](res/sentinel-map1.png)
 
-## **Attempt 2 - Map of incoming attacks after 14 hours (built custom logs including geodata)**
+## Map of incoming attacks after 14 hours (built custom logs including geodata)**
 
 ![sentinel-map2](res/sentinel-map2.png)
 
 ---
 
 <br>
-<h2>PowerShell Code Explanation</h2>
+<h2>PowerShell code explanation</h2>
 
 <details>
     <summary><b>Click to expand</b></summary>
